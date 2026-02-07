@@ -1,0 +1,12 @@
+
+Network Structure:
+Input Layer: 21 nodes, 189 edges.
+Hidden Layer 1: 9 nodes, 81 edges.
+Hidden Layer 2: 9 nodes, 81 edges.
+Hidden Layer 3: 9 nodes, 81 edges.
+Hidden Layer 4: 9 nodes, 81 edges.
+Hidden Layer 5: 9 nodes, 81 edges.
+Hidden Layer 6: 9 nodes, 81 edges.
+Hidden Layer 7: 9 nodes, 90 edges.
+Output Layer: 10 nodes, 90 edges.
+

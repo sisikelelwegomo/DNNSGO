@@ -1,0 +1,275 @@
+Training started for:
+  Input Size: 8
+  Output Size: 4
+  N: 5
+  Skip Percentage: 0.0
+Added hidden layer with 5 nodes
+
+Network Structure:
+Input Layer: 8 nodes, 40 edges.
+Hidden Layer 1: 5 nodes, 20 edges.
+Output Layer: 4 nodes, 20 edges.
+
+Number of layers in Teacher: 4
+Number of layers in Student: 3
+Output layer connections: 20/20
+Output layer connections: 400/400
+Average Epoch Time (s): 0.012
+Epoch 0
+    Loss on Dataset = 1.6738656792901765
+    Accuracy on Dataset = 15.18 %
+Validation dataset:
+    Loss on Dataset = 1.6668282890000334
+    Accuracy on Dataset = 15.1 %
+CPU Load: 15.59 %
+Memory Used: 7 MB | Free Memory: 504 MB
+Start Time: 603370654139200 End Time: 603370666122600 Average Time (ns): 1.19834E7
+Input Layer: Average Weight = 1.037863 | Edge Count = 72
+Hidden Layer 1: Average Weight = 1.047167 | Edge Count = 20
+Output Layer: Average Weight = 1.047167 | Edge Count = 20
+Output Layer: Nodes with no outgoing edges = 4
+Average Epoch Time (s): 0.008
+Epoch 1
+    Loss on Dataset = 1.6099923653233377
+    Accuracy on Dataset = 16.2 %
+Validation dataset:
+    Loss on Dataset = 1.6027715671201772
+    Accuracy on Dataset = 15.939999999999998 %
+CPU Load: 15.59 %
+Memory Used: 7 MB | Free Memory: 504 MB
+Start Time: 603371345055300 End Time: 603371348157600 Average Time (ns): 7542850.0
+Input Layer: Average Weight = 1.030222 | Edge Count = 72
+Hidden Layer 1: Average Weight = 1.032384 | Edge Count = 20
+Output Layer: Average Weight = 1.032384 | Edge Count = 20
+Output Layer: Nodes with no outgoing edges = 4
+Average Epoch Time (s): 0.006
+Epoch 2
+    Loss on Dataset = 1.5421753531271225
+    Accuracy on Dataset = 17.24 %
+Validation dataset:
+    Loss on Dataset = 1.5354399689040503
+    Accuracy on Dataset = 16.8 %
+CPU Load: 15.59 %
+Memory Used: 8 MB | Free Memory: 504 MB
+Start Time: 603371375067200 End Time: 603371378064300 Average Time (ns): 6027600.0
+Input Layer: Average Weight = 1.021247 | Edge Count = 72
+Hidden Layer 1: Average Weight = 1.020969 | Edge Count = 20
+Output Layer: Average Weight = 1.020969 | Edge Count = 20
+Output Layer: Nodes with no outgoing edges = 4
+Average Epoch Time (s): 0.005
+Epoch 3
+    Loss on Dataset = 1.4704372766197906
+    Accuracy on Dataset = 18.26 %
+Validation dataset:
+    Loss on Dataset = 1.4648260199561507
+    Accuracy on Dataset = 17.86 %
+CPU Load: 15.59 %
+Memory Used: 8 MB | Free Memory: 504 MB
+Start Time: 603371405529900 End Time: 603371408324200 Average Time (ns): 5219275.0
+Input Layer: Average Weight = 1.010853 | Edge Count = 72
+Hidden Layer 1: Average Weight = 1.010369 | Edge Count = 20
+Output Layer: Average Weight = 1.010369 | Edge Count = 20
+Output Layer: Nodes with no outgoing edges = 4
+Average Epoch Time (s): 0.005
+Epoch 4
+    Loss on Dataset = 1.3958573192799202
+    Accuracy on Dataset = 19.18 %
+Validation dataset:
+    Loss on Dataset = 1.3916577051343655
+    Accuracy on Dataset = 18.98 %
+CPU Load: 15.59 %
+Memory Used: 8 MB | Free Memory: 504 MB
+Start Time: 603371435959500 End Time: 603371439075500 Average Time (ns): 4798620.0
+Input Layer: Average Weight = 0.999528 | Edge Count = 72
+Hidden Layer 1: Average Weight = 1.001100 | Edge Count = 20
+Output Layer: Average Weight = 1.001100 | Edge Count = 20
+Output Layer: Nodes with no outgoing edges = 4
+Average Epoch Time (s): 0.005
+Epoch 5
+    Loss on Dataset = 1.3200937569574018
+    Accuracy on Dataset = 20.34 %
+Validation dataset:
+    Loss on Dataset = 1.3171931446471294
+    Accuracy on Dataset = 20.5 %
+CPU Load: 15.59 %
+Memory Used: 8 MB | Free Memory: 504 MB
+Start Time: 603371467038800 End Time: 603371472244900 Average Time (ns): 4866533.333333333
+Input Layer: Average Weight = 0.987512 | Edge Count = 72
+Hidden Layer 1: Average Weight = 0.992007 | Edge Count = 20
+Output Layer: Average Weight = 0.992007 | Edge Count = 20
+Output Layer: Nodes with no outgoing edges = 4
+Average Epoch Time (s): 0.005
+Epoch 6
+    Loss on Dataset = 1.2457647238361182
+    Accuracy on Dataset = 21.86 %
+Validation dataset:
+    Loss on Dataset = 1.2441531541799362
+    Accuracy on Dataset = 22.18 %
+CPU Load: 15.59 %
+Memory Used: 8 MB | Free Memory: 504 MB
+Start Time: 603371504241800 End Time: 603371507532700 Average Time (ns): 4641442.857142857
+Input Layer: Average Weight = 0.974410 | Edge Count = 72
+Hidden Layer 1: Average Weight = 0.982862 | Edge Count = 20
+Output Layer: Average Weight = 0.982862 | Edge Count = 20
+Output Layer: Nodes with no outgoing edges = 4
+Average Epoch Time (s): 0.004
+Epoch 7
+    Loss on Dataset = 1.175451140279598
+    Accuracy on Dataset = 23.54 %
+Validation dataset:
+    Loss on Dataset = 1.1754523045993543
+    Accuracy on Dataset = 24.279999999999998 %
+CPU Load: 15.59 %
+Memory Used: 8 MB | Free Memory: 504 MB
+Start Time: 603371535579500 End Time: 603371538728100 Average Time (ns): 4454837.5
+Input Layer: Average Weight = 0.961422 | Edge Count = 72
+Hidden Layer 1: Average Weight = 0.973583 | Edge Count = 20
+Output Layer: Average Weight = 0.973583 | Edge Count = 20
+Output Layer: Nodes with no outgoing edges = 4
+Average Epoch Time (s): 0.004
+Epoch 8
+    Loss on Dataset = 1.1132752053498922
+    Accuracy on Dataset = 25.36 %
+Validation dataset:
+    Loss on Dataset = 1.1149177121090756
+    Accuracy on Dataset = 26.32 %
+CPU Load: 15.59 %
+Memory Used: 8 MB | Free Memory: 504 MB
+Start Time: 603371579621700 End Time: 603371584094500 Average Time (ns): 4456833.333333333
+Input Layer: Average Weight = 0.948859 | Edge Count = 72
+Hidden Layer 1: Average Weight = 0.964123 | Edge Count = 20
+Output Layer: Average Weight = 0.964123 | Edge Count = 20
+Output Layer: Nodes with no outgoing edges = 4
+Average Epoch Time (s): 0.005
+Epoch 9
+    Loss on Dataset = 1.0612829422319976
+    Accuracy on Dataset = 26.72 %
+Validation dataset:
+    Loss on Dataset = 1.064069718289401
+    Accuracy on Dataset = 27.74 %
+CPU Load: 15.59 %
+Memory Used: 8 MB | Free Memory: 504 MB
+Start Time: 603371638040800 End Time: 603371643086600 Average Time (ns): 4515730.0
+Input Layer: Average Weight = 0.937071 | Edge Count = 72
+Hidden Layer 1: Average Weight = 0.954466 | Edge Count = 20
+Output Layer: Average Weight = 0.954466 | Edge Count = 20
+Output Layer: Nodes with no outgoing edges = 4
+Average Epoch Time (s): 0.004
+Epoch 10
+    Loss on Dataset = 1.0194822276511502
+    Accuracy on Dataset = 28.720000000000002 %
+Validation dataset:
+    Loss on Dataset = 1.0229383548568909
+    Accuracy on Dataset = 29.48 %
+CPU Load: 15.59 %
+Memory Used: 8 MB | Free Memory: 504 MB
+Start Time: 603371673939600 End Time: 603371677032000 Average Time (ns): 4386336.363636363
+Input Layer: Average Weight = 0.926004 | Edge Count = 72
+Hidden Layer 1: Average Weight = 0.944579 | Edge Count = 20
+Output Layer: Average Weight = 0.944579 | Edge Count = 20
+Output Layer: Nodes with no outgoing edges = 4
+Average Epoch Time (s): 0.004
+Epoch 11
+    Loss on Dataset = 0.9862526211583318
+    Accuracy on Dataset = 30.3 %
+Validation dataset:
+    Loss on Dataset = 0.9902425281391434
+    Accuracy on Dataset = 30.599999999999998 %
+CPU Load: 15.59 %
+Memory Used: 8 MB | Free Memory: 504 MB
+Start Time: 603371705361400 End Time: 603371708442900 Average Time (ns): 4277600.0
+Input Layer: Average Weight = 0.915899 | Edge Count = 72
+Hidden Layer 1: Average Weight = 0.934419 | Edge Count = 20
+Output Layer: Average Weight = 0.934419 | Edge Count = 20
+Output Layer: Nodes with no outgoing edges = 4
+Average Epoch Time (s): 0.004
+Epoch 12
+    Loss on Dataset = 0.9593351332772034
+    Accuracy on Dataset = 31.740000000000002 %
+Validation dataset:
+    Loss on Dataset = 0.9639053097628258
+    Accuracy on Dataset = 31.979999999999997 %
+CPU Load: 15.59 %
+Memory Used: 8 MB | Free Memory: 504 MB
+Start Time: 603371740398900 End Time: 603371743433400 Average Time (ns): 4181976.923076923
+Input Layer: Average Weight = 0.906599 | Edge Count = 72
+Hidden Layer 1: Average Weight = 0.924152 | Edge Count = 20
+Output Layer: Average Weight = 0.924152 | Edge Count = 20
+Output Layer: Nodes with no outgoing edges = 4
+Average Epoch Time (s): 0.004
+Epoch 13
+    Loss on Dataset = 0.9369960993884678
+    Accuracy on Dataset = 32.82 %
+Validation dataset:
+    Loss on Dataset = 0.9422398223461638
+    Accuracy on Dataset = 32.800000000000004 %
+CPU Load: 15.07 %
+Memory Used: 8 MB | Free Memory: 503 MB
+Start Time: 603371782106900 End Time: 603371788350500 Average Time (ns): 4329235.714285715
+Input Layer: Average Weight = 0.898054 | Edge Count = 72
+Hidden Layer 1: Average Weight = 0.913819 | Edge Count = 20
+Output Layer: Average Weight = 0.913819 | Edge Count = 20
+Output Layer: Nodes with no outgoing edges = 4
+Average Epoch Time (s): 0.004
+Epoch 14
+    Loss on Dataset = 0.9180321215236993
+    Accuracy on Dataset = 33.98 %
+Validation dataset:
+    Loss on Dataset = 0.9240425732228037
+    Accuracy on Dataset = 33.32 %
+CPU Load: 15.07 %
+Memory Used: 8 MB | Free Memory: 503 MB
+Start Time: 603371842794500 End Time: 603371846075900 Average Time (ns): 4259380.0
+Input Layer: Average Weight = 0.890655 | Edge Count = 72
+Hidden Layer 1: Average Weight = 0.903382 | Edge Count = 20
+Output Layer: Average Weight = 0.903382 | Edge Count = 20
+Output Layer: Nodes with no outgoing edges = 4
+Average Epoch Time (s): 0.004
+Epoch 15
+    Loss on Dataset = 0.9013324300134551
+    Accuracy on Dataset = 34.86 %
+Validation dataset:
+    Loss on Dataset = 0.9081640414446334
+    Accuracy on Dataset = 34.42 %
+CPU Load: 15.07 %
+Memory Used: 8 MB | Free Memory: 503 MB
+Start Time: 603371874358800 End Time: 603371877055400 Average Time (ns): 4161706.25
+Input Layer: Average Weight = 0.883871 | Edge Count = 72
+Hidden Layer 1: Average Weight = 0.892867 | Edge Count = 20
+Output Layer: Average Weight = 0.892867 | Edge Count = 20
+Output Layer: Nodes with no outgoing edges = 4
+Average Epoch Time (s): 0.004
+Epoch 16
+    Loss on Dataset = 0.8862105366530172
+    Accuracy on Dataset = 35.620000000000005 %
+Validation dataset:
+    Loss on Dataset = 0.8938655721429857
+    Accuracy on Dataset = 35.5 %
+CPU Load: 15.07 %
+Memory Used: 8 MB | Free Memory: 503 MB
+Start Time: 603371904336500 End Time: 603371908302500 Average Time (ns): 4150194.117647059
+Input Layer: Average Weight = 0.877520 | Edge Count = 72
+Hidden Layer 1: Average Weight = 0.884773 | Edge Count = 20
+Output Layer: Average Weight = 0.884773 | Edge Count = 20
+Output Layer: Nodes with no outgoing edges = 4
+Average Epoch Time (s): 0.004
+Epoch 17
+    Loss on Dataset = 0.8721518249996058
+    Accuracy on Dataset = 36.88 %
+Validation dataset:
+    Loss on Dataset = 0.880587998524275
+    Accuracy on Dataset = 36.34 %
+CPU Load: 15.07 %
+Memory Used: 8 MB | Free Memory: 503 MB
+Start Time: 603371938759500 End Time: 603371941469200 Average Time (ns): 4070166.6666666665
+Input Layer: Average Weight = 0.872312 | Edge Count = 72
+Hidden Layer 1: Average Weight = 0.878325 | Edge Count = 20
+Output Layer: Average Weight = 0.878325 | Edge Count = 20
+Output Layer: Nodes with no outgoing edges = 4
+Average Epoch Time (s): 0.004
+Epoch 18
+    Loss on Dataset = 0.8588033885107389
+    Accuracy on Dataset = 37.84 %
+Validation dataset:
+    Loss on Dataset = 0.8678986707863623
+    Accuracy on Datase
