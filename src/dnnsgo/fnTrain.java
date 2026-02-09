@@ -1,4 +1,4 @@
-package dnnsg;
+package dnnsgo;
 
 import java.io.PrintWriter;
 import java.lang.management.ManagementFactory;

@@ -1,4 +1,4 @@
-package dnnsg;
+package dnnsgo;
 
 public class AdamOptimizer {
     private double alpha;  // Learning rate

@@ -1,4 +1,4 @@
-package dnnsg;
+package dnnsgo;
 
 import java.io.*;
 import java.util.*;

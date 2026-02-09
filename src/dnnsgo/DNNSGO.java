@@ -1,4 +1,4 @@
-package dnnsg;
+package dnnsgo;
 
 import java.io.File;
 import java.io.FileWriter;

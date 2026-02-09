@@ -1,5 +1,5 @@
 
-package dnnsg;
+package dnnsgo;
 
 /**
  *

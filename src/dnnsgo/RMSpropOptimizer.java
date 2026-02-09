@@ -1,4 +1,4 @@
-package dnnsg;
+package dnnsgo;
 
 public class RMSpropOptimizer {
     private final double alpha;  // Learning rate

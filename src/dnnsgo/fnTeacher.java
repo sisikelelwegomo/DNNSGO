@@ -1,4 +1,4 @@
-package dnnsg;
+package dnnsgo;
 
 import java.util.ArrayList;
 import java.util.HashMap;

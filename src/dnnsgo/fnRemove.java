@@ -1,4 +1,4 @@
-package dnnsg;
+package dnnsgo;
 
 public class fnRemove {
    public static void networkCleanup(network Net) {
