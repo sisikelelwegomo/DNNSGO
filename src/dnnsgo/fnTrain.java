@@ -1058,7 +1058,7 @@ public static void updateInputNodeWithDropout(node n) {
 
         writer.printf("Average Inference Time per Sample: %.6f seconds\n", inferenceTime/ TinputsValidate.length);
 
-        String weightsPath = "C:\\Users\\jimmy\\Documents\\NetBeansProjects\\DNNSG\\Expirement1\\StaticFinal\\weights5.csv";
+        String weightsPath = "C:\\Users\\jimmy\\Documents\\NetBeansProjects\\DNNSGOP\\Expirement1\\StaticFinal\\weights5.csv";
 
         exportWeightsToCSV(Student, weightsPath);
 
@@ -1193,7 +1193,7 @@ public static void updateInputNodeWithDropout(node n) {
 
     writer.printf("Average Inference Time per Sample: %.6f seconds\n", inferenceTime/ TinputsValidate.length);
 
-    String weightsPath = "C:\\Users\\jimmy\\Documents\\NetBeansProjects\\DNNSG\\Expirement1\\StaticFinal\\weights5.csv";
+    String weightsPath = "C:\\Users\\jimmy\\Documents\\NetBeansProjects\\DNNSGOP\\Expirement1\\StaticFinal\\weights5.csv";
     
     exportWeightsToCSV(Student, weightsPath);
     
@@ -1329,7 +1329,7 @@ public static void updateInputNodeWithDropout(node n) {
 
                 writer.printf("Average Inference Time per Sample: %.6f seconds\n", inferenceTime/ TinputsValidate.length);
 
-                String weightsPath = "C:\\Users\\jimmy\\Documents\\NetBeansProjects\\DNNSG\\Expirement1\\StaticFinal\\weights5.csv";
+                String weightsPath = "C:\\Users\\jimmy\\Documents\\NetBeansProjects\\DNNSGOP\\Expirement1\\StaticFinal\\weights5.csv";
 
                 exportWeightsToCSV(Student, weightsPath);
 
@@ -1467,7 +1467,7 @@ public static void updateInputNodeWithDropout(node n) {
 
         writer.printf("Average Inference Time per Sample: %.6f seconds\n", inferenceTime/ TinputsValidate.length);
 
-        String weightsPath = "C:\\Users\\jimmy\\Documents\\NetBeansProjects\\DNNSG\\Expirement1\\StaticFinal\\weights5.csv";
+        String weightsPath = "C:\\Users\\jimmy\\Documents\\NetBeansProjects\\DNNSGOP\\Expirement1\\StaticFinal\\weights5.csv";
         
         exportWeightsToCSV(Student, weightsPath);
         
@@ -1603,7 +1603,7 @@ public static void updateInputNodeWithDropout(node n) {
 
             writer.printf("Average Inference Time per Sample: %.6f seconds\n", inferenceTime/ TinputsValidate.length);
 
-            String weightsPath = "C:\\Users\\jimmy\\Documents\\NetBeansProjects\\DNNSG\\Expirement1\\StaticFinal\\weights5.csv";
+            String weightsPath = "C:\\Users\\jimmy\\Documents\\NetBeansProjects\\DNNSGOP\\Expirement1\\StaticFinal\\weights5.csv";
 
             exportWeightsToCSV(Student, weightsPath);
 
@@ -1742,7 +1742,7 @@ public static void updateInputNodeWithDropout(node n) {
 
     writer.printf("Average Inference Time per Sample: %.6f seconds\n", inferenceTime/ TinputsValidate.length);
 
-    String weightsPath = "C:\\Users\\jimmy\\Documents\\NetBeansProjects\\DNNSG\\Expirement1\\StaticFinal\\weights5.csv";
+    String weightsPath = "C:\\Users\\jimmy\\Documents\\NetBeansProjects\\DNNSGOP\\Expirement1\\StaticFinal\\weights5.csv";
     
     exportWeightsToCSV(Student, weightsPath);
     
@@ -1880,7 +1880,7 @@ public static void updateInputNodeWithDropout(node n) {
 
         writer.printf("Average Inference Time per Sample: %.6f seconds\n", inferenceTime/ TinputsValidate.length);
 
-        String weightsPath = "C:\\Users\\jimmy\\Documents\\NetBeansProjects\\DNNSG\\Expirement1\\StaticFinal\\weights5.csv";
+        String weightsPath = "C:\\Users\\jimmy\\Documents\\NetBeansProjects\\DNNSGOP\\Expirement1\\StaticFinal\\weights5.csv";
 
         exportWeightsToCSV(Student, weightsPath);
 
@@ -2019,7 +2019,7 @@ public static void updateInputNodeWithDropout(node n) {
 
         writer.printf("Average Inference Time per Sample: %.6f seconds\n", inferenceTime/ TinputsValidate.length);
 
-        String weightsPath = "C:\\Users\\jimmy\\Documents\\NetBeansProjects\\DNNSG\\Expirement1\\StaticFinal\\weights5.csv";
+        String weightsPath = "C:\\Users\\jimmy\\Documents\\NetBeansProjects\\DNNSGOP\\Expirement1\\StaticFinal\\weights5.csv";
 
         exportWeightsToCSV(Student, weightsPath);
 
@@ -2156,7 +2156,7 @@ public static void updateInputNodeWithDropout(node n) {
 
             writer.printf("Average Inference Time per Sample: %.6f seconds\n", inferenceTime/ TinputsValidate.length);
 
-            String weightsPath = "C:\\Users\\jimmy\\Documents\\NetBeansProjects\\DNNSG\\Expirement1\\StaticFinal\\weights5.csv";
+            String weightsPath = "C:\\Users\\jimmy\\Documents\\NetBeansProjects\\DNNSGOP\\Expirement1\\StaticFinal\\weights5.csv";
 
             exportWeightsToCSV(Student, weightsPath);
 
@@ -2253,7 +2253,7 @@ private static void evaluateModel(network net, PrintWriter writer) {
                  inferenceTime / TinputsValidate.length);
     
     // Save final weights
-    String weightsPath = "C:\\Users\\jimmy\\Documents\\NetBeansProjects\\DNNSG\\Expirement1\\Dynamic\\weights_final.csv";
+    String weightsPath = "C:\\Users\\jimmy\\Documents\\NetBeansProjects\\DNNSGOP\\Expirement1\\Dynamic\\weights_final.csv";
     exportWeightsToCSV(net, weightsPath);
     writer.println("Final weights saved to: " + weightsPath);
 }
@@ -2975,25 +2975,24 @@ public static void saveAverageWeightsDebug(network Net, PrintWriter writer) {
     public static double singleLoss(network Net, double[] A, double[] T) {
     
     // Calculates the sum-of-squares loss on input A with respect to target T.
-    
     fnFeedForward.feedForward(Net, A);
-    
     node n = Net.outputlayernode.firstnode;
-    
     double loss = 0.0;
-    
     for (int j = 0; j < T.length; j++) {
-        
-        loss += Math.pow(n.actvalue - T[j], 2);
-        
+        double output = n.actvalue;
+        double target = T[j];
+        double diff = output - target;
+        double term = diff * diff;
+        if (Double.isNaN(output) || Double.isNaN(target) || Double.isNaN(term) || Double.isInfinite(output) || Double.isInfinite(target) || Double.isInfinite(term)) {
+            System.err.println("[DEBUG] NaN/Inf detected in singleLoss: output=" + output + ", target=" + target + ", term=" + term + ", j=" + j);
+        }
+        loss += term;
         n = n.next;
-        
     }
-    
+    if (Double.isNaN(loss) || Double.isInfinite(loss)) {
+        System.err.println("[DEBUG] NaN/Inf detected in total loss for this sample: " + loss);
+    }
     return loss;
-    
-    
-    
     }
     
     
@@ -3033,25 +3032,23 @@ public static void saveAverageWeightsDebug(network Net, PrintWriter writer) {
     public static double totalLoss(network Net, double[][] Inputs, double[][] Targets, PrintWriter writer) {
     
     double totalloss = 0.0;
-    
+    int nanCount = 0;
     for (int i = 0; i < Inputs.length; i++) {
-        
-        totalloss += singleLoss(Net, Inputs[i], Targets[i]);
-        
+        double sampleLoss = singleLoss(Net, Inputs[i], Targets[i]);
+        if (Double.isNaN(sampleLoss) || Double.isInfinite(sampleLoss)) {
+            nanCount++;
+            System.err.println("[DEBUG] NaN/Inf detected in totalLoss at sample " + i + ": " + sampleLoss);
+        }
+        totalloss += sampleLoss;
     }
-    
-    // For a sum-of-squares loss, it's common to divide by 2.
-    
     totalloss = totalloss / Inputs.length;
-    
     lastComputedLoss = totalloss;  // Store the computed loss
-
+    if (Double.isNaN(totalloss) || Double.isInfinite(totalloss)) {
+        System.err.println("[DEBUG] NaN/Inf detected in final totalLoss: " + totalloss + ". NaN/Inf samples: " + nanCount + "/" + Inputs.length);
+    }
     System.out.println("    Loss on Dataset = " + totalloss);
-    
     writer.println("    Loss on Dataset = " + totalloss);
-    
     return totalloss;
-    
     }
 
 
